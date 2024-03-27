@@ -9,6 +9,19 @@ import { Globe } from "@/components/ui/globe";
 import { sampleArcs } from "@/components/main/home/hero/sampleArc";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import TickerTV from "./TickerTV";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTelegram,
+  faTelegramPlane,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  IconBrandFacebook,
+  IconBrandFacebookFilled,
+} from "@tabler/icons-react";
 const World = dynamic(
   () => import("@/components/ui/globe").then((m) => m.World),
   {
@@ -54,20 +67,20 @@ export default function HeroSectionBg() {
       <div className="h-full relative">
         <div className="flex items-center justify-center h-full ">
           <div className="hero-texts w-full grid-cols-1 md:px-16 lg:grid-cols-2 h-full grid">
-            <div className="textxbtn font-bold md:h-full flex items-center lg:pl-7 w-full z-20">
+            <div className="textxbtn font-bold md:h-full flex items-center relative lg:pl-7 w-full z-20">
               <div className="textcont">
                 <div className="textheader text-white/90 font-black">
                   <TextGenerateEffect
-                    words="The #1 Leading Profit Investment Platform"
+                    words="The #1 Leading Crypto Investment Platform"
                     className="lg:text-5xl md:text-4xl px-3 md:px-0 text-3xl lg:text-left text-center tracking-tighter text-balance"
                   />
                   <TextGenerateEffect
                     words="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique iure, blanditiis minima excepturi asperiores expedita."
-                    className="md:text-base text-sm text-center lg:text-left text-gray-300 font-medium lg:w-5/6 mt-2 px-2 md:px-0 text-balance"
+                    className="md:text-base text-sm text-center lg:text-left text-gray-300 font-medium /lg:w-5/6 mt-2 px-2 md:px-0 text-balance"
                   />
                 </div>
 
-                <div className="cta flex gap-x-4 items-center justify-center lg:justify-start mt-8 z-20">
+                <div className="cta relative flex gap-x-4 items-center justify-center lg:justify-start mt-8 z-20">
                   <div className="btnone signup ">
                     <Button className="/h-12 rounded-full cursor-pointer flex font-bold items-center gap-x-2 text-white bg-gradient-to-r from-green-500 to-green-700">
                       <p>Get Started</p>{" "}
@@ -102,40 +115,59 @@ export default function HeroSectionBg() {
                     </svg>
                   </Button>
                 </div>
-                {/* <div className="sponsors md:mt-20">
-                <div className="headername pb-3 text-gray-300 text-sm">
-                  TRUSTED GREATLY WORLDWIDE BY
+                <div className="socials hidden lg:block mt-9  absolute left-8 bottom-14">
+                  <div className="socialcont flex items-center gap-x-5 justify-be/tween w-1/2">
+                    <div className="facebook flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                      <FontAwesomeIcon icon={faFacebook} className="w-5 h-5" />
+                      {/* <p>Facebook</p> */}
+                    </div>
+                    <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                      <FontAwesomeIcon
+                        icon={faTelegramPlane}
+                        className="w-5 h-5"
+                      />
+                      {/* <p>Telegram</p> */}
+                    </div>
+                    <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                      <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
+                      {/* <p>Telegram</p> */}
+                    </div>
+                    <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                      <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
+                      {/* <p>Telegram</p> */}
+                    </div>
+                  </div>
                 </div>
-
-                <div className="sponsorBAr flex gap-x-3 items-center">
-                  {imagePaths.map((img) => (
-                    <Image
-                      src={img}
-                      alt=""
-                      width={100}
-                      height={100}
-                      key={img}
-                    />
-                  ))}
-                </div>
-              </div> */}
               </div>
             </div>
             <div className="lg:relative animationGIF z-10 w-full flex items-center justify-center /bg-blue-500 h-full ">
               <div className="md:w-4/5 md:h-4/5 w-full h-[60%] lg:w-full lg:h-full absolute  lg:p-8 lg:top-0 /bottom-0 md:-bottom-4 bottom-20">
                 <World globeConfig={globeConfig} data={sampleArcs} />
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="sponsor w-full md:px-40 absolute -bottom-6 z-20 flex  justify-center">
-          <div className="grid grid-cols-3  gap-4 md:grid-cols-6 gap-x-7 mt-8">
-            {imagePaths.map((imagePath) => (
-              <div key={imagePath}>
-                {" "}
-                <Image alt="" src={imagePath} width={70} height={70} />
+              <div className="socials absolute bottom-14 lg:hidden  mt-3 flex justify-center">
+                <div className="socialcont flex items-center gap-x-5 justify-be/tween">
+                  <div className="facebook flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                    <FontAwesomeIcon icon={faFacebook} className="w-5 h-5" />
+                    {/* <p>Facebook</p> */}
+                  </div>
+                  <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                    <FontAwesomeIcon
+                      icon={faTelegramPlane}
+                      className="w-5 h-5"
+                    />
+                    {/* <p>Telegram</p> */}
+                  </div>
+                  <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                    <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
+                    {/* <p>Telegram</p> */}
+                  </div>
+                  <div className="telegram flex items-center gap-x-2 opacity-30 hover:opacity-100 transition-all cursor-pointer">
+                    <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
+                    {/* <p>Telegram</p> */}
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>

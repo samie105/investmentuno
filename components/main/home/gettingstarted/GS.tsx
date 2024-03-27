@@ -119,32 +119,25 @@ export default function GettingStarted() {
     },
   ];
   return (
-    <div className="text-white/90 px-5 py-3 mt-20 w-full overflow-hidden">
+    <div className="text-white/90 px-5 py-3 mt-8 w-full overflow-hidden relative">
+      {" "}
+      <div className="absolute top-0 left-0">
+        <Image
+          alt=""
+          src={"/assets/main/sssvgs/ooorganize.svg"}
+          width={300}
+          height={300}
+          className="opacity-50"
+        />
+      </div>
       <div className="textcont flex justify-between items-center relative">
         <div>
-          {" "}
-          <div className="gsText flex items-center gap-4 md:gap-x-8 ">
+          <div className="gsText pl-3">
             {" "}
-            <div className=" relative flex items-center justify-center">
-              <div className="bg-green-500 h-4 w-4 p-3 blur-md rounded-full "></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5 text-white z-20 absolute"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
-                />
-              </svg>
-            </div>
+            <div className=" relative flex items-center justify-center"></div>
             <p className="font-bold text-lg ">Getting Started</p>
           </div>{" "}
-          <div className="headingcontinua text-sm md:text-base text-gray-300 mt-3 pl-10 md:pl-14 font-medium ">
+          <div className="headingcontinua text-sm md:text-base text-gray-300 mt-3 pl-3 font-medium ">
             <div className="arrow">
               <Image
                 alt=""
@@ -162,7 +155,7 @@ export default function GettingStarted() {
             <br className="hidden" /> take long
           </div>
         </div>
-        <div className="btn hidden md:flex font-bold text-sm hover:bg-white/5 items-center mr-14 transition-all duration-500 cursor-pointer text-green-500 px-4 py-3 rounded-lg gap-x-3">
+        <div className="btn hidden md:flex font-bold text-sm hover:bg-white/5 items-center mr-4 transition-all duration-500 cursor-pointer text-green-500 px-4 py-3 rounded-lg gap-x-3">
           <p>Create an account</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +171,7 @@ export default function GettingStarted() {
           </svg>
         </div>
       </div>
-      <div className="stepcont md:px-8 px-2">
+      <div className="stepcont px-2">
         <HoverEffect items={gsSteps} />
       </div>
     </div>
