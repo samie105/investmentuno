@@ -3,7 +3,7 @@ import HeroSectionBg from "@/components/main/home/hero/Hero-section-bg";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#0D1117] text-white">
       <HeroSectionBg />
       <GettingStarted />
     </main>

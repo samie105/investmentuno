@@ -85,7 +85,7 @@ export default function HeroSectionBg() {
                       </svg>
                     </Button>
                   </div>
-                  <Button className="btnone font-bold hover:bg-white/10 bg-white/5 rounded-full login flex cursor-pointer text-white items-center gap-x-2 text-sm">
+                  <Button className="btnone hidden lg:flex font-bold hover:bg-white/10 bg-white/5 rounded-full login cursor-pointer text-white items-center gap-x-2 text-sm">
                     {" "}
                     <p>Continue Investment</p>{" "}
                     <svg
@@ -128,14 +128,16 @@ export default function HeroSectionBg() {
             </div>
           </div>
         </div>
-        {/* <div className="sponsor hidden lg:flex w-full md:px-40 items-center justify-around absolute bottom-2 z-20">
-          {imagePaths.map((imagePath) => (
-            <div key={imagePath}>
-              {" "}
-              <Image alt="" src={imagePath} width={70} height={70} />
-            </div>
-          ))}
-        </div> */}
+        <div className="sponsor w-full md:px-40 absolute -bottom-6 z-20 flex  justify-center">
+          <div className="grid grid-cols-3  gap-4 md:grid-cols-6 gap-x-7 mt-8">
+            {imagePaths.map((imagePath) => (
+              <div key={imagePath}>
+                {" "}
+                <Image alt="" src={imagePath} width={70} height={70} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
