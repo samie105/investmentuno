@@ -85,7 +85,7 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
       <div className="cta hidden lg:block">
-        <Button className="text-white px-4 /h-12 bg-gradient-to-r from-green-500 to-green-700 flex text-sm rounded-full font-bold items-center gap-x-3 ">
+        <Button className="text-white px-4 /h-12 bg-[#15833e] flex text-sm rounded-full font-bold items-center gap-x-3 ">
           <span>Get Started</span>{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

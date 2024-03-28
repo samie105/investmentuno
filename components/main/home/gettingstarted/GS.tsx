@@ -13,7 +13,7 @@ export default function GettingStarted() {
     {
       stepname: "Create an account",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Create an account to get started your financial journey us, we'll guide you through the way ",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export default function GettingStarted() {
     {
       stepname: "Familiarize the interface",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Take a few time to understand the platform, the look & feels, getting your self ready in time",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export default function GettingStarted() {
     {
       stepname: "Choose an asset",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Choose a crypto asset of your choice available, each crypto asset plan varies in profit, percentage & duration",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function GettingStarted() {
     {
       stepname: "Make a deposit",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Make a deposit to your wallet to kickstart your investment cycle. this also varies with crypto asset",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function GettingStarted() {
     {
       stepname: "Earn with time",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Watch how your asset generate revenue per time with zero to no risk in return",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function GettingStarted() {
     {
       stepname: "Recieve your profit",
       stepDetails:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic delectus sunt non porro? Quis ",
+        "Recieve your profit at the end of the investment cycle. This is the final stage of the process.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +147,7 @@ export default function GettingStarted() {
                 className="absolute animate-pulse -right-3 md:left-[50%] lg:left-1/3 top-0 opacity-40"
               />
             </div>
-            <span className="text-green-500">
-              Kickstart your crypto earning journey.
-            </span>{" "}
+            <span className="">Kickstart your crypto earning journey.</span>{" "}
             <br className="/hidden lg:block" />
             Get started with these few steps, it would not{" "}
             <br className="hidden" /> take long

@@ -51,13 +51,13 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg p-8">
-            <div className="font-bold flex items-center justify-between text-lg text-green-600 ">
+            <div className="font-bold flex items-center justify-between text-lg text-white/90 /text-green-600 ">
               <p>{item.stepname}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 text-[#15833e]"
               >
                 <path
                   fillRule="evenodd"

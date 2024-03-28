@@ -65,7 +65,7 @@ export default function HeroSectionBg() {
     <div className="h-screen w-full bg-[#0D1117] overflow-hidden relative">
       {" "}
       <BackgroundBeams className="hidden md:block" />{" "}
-      <Meteors number={30} className="md:hidden" />
+      <Meteors number={10} className="md:hidden" />
       <div className="h-full relative">
         <div className="flex items-center justify-center h-full ">
           <div className="hero-texts w-full grid-cols-1 md:px-16 lg:grid-cols-2 h-full grid">
@@ -84,7 +84,7 @@ export default function HeroSectionBg() {
 
                 <div className="cta relative flex gap-x-4 items-center justify-center lg:justify-start mt-8 z-20">
                   <div className="btnone signup ">
-                    <Button className="/h-12 rounded-full cursor-pointer flex font-bold items-center gap-x-2 text-white bg-gradient-to-r from-green-500 to-green-700">
+                    <Button className="/h-12 rounded-full cursor-pointer flex font-bold items-center gap-x-2 text-white bg-[#15833e]">
                       <p>Get Started</p>{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
