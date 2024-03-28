@@ -119,7 +119,7 @@ export default function GettingStarted() {
     },
   ];
   return (
-    <div className="text-white/90 px-5 py-3 mt-8 w-full overflow-hidden relative">
+    <div className="text-white/90 px-3 md:px-5 py-3 mt-8 w-full overflow-hidden relative">
       {" "}
       <div className="absolute top-0 left-0">
         <Image
@@ -127,7 +127,7 @@ export default function GettingStarted() {
           src={"/assets/main/sssvgs/ooorganize.svg"}
           width={300}
           height={300}
-          className="opacity-50"
+          className="opacity-20"
         />
       </div>
       <div className="textcont flex justify-between items-center relative">

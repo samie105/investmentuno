@@ -29,14 +29,14 @@ export const HoverEffect = ({
         <Link
           href={"#"}
           key={item?.stepname}
-          className="relative group  block p-1 h-full w-full"
+          className="relative group  block p-0.5 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-green-700 block  rounded-lg"
+                className="absolute inset-0 h-full w-full bg-green-800 block  rounded-lg"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,8 +50,8 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="/border-green-900 /border rounded-lg relative bg-[#15191e] backdrop-filter backdrop-blur-sm p-8">
-            <div className="font-bold flex items-center justify-between text-lg text-green-500 ">
+          <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg p-8">
+            <div className="font-bold flex items-center justify-between text-lg text-green-600 ">
               <p>{item.stepname}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

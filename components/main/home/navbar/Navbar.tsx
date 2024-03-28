@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { IconArrowRight, IconMenu2 } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -15,13 +15,34 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false); // State to track scroll
   const MotionLink = motion(Link);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if user has scrolled more than 100px, then set scrolled state to true
+      if (window.scrollY > 70) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Add event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   type Nav = {
     name: string;
     path: string;
   }[];
-  const pathname = usePathname();
+
   const navItems: Nav = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -29,9 +50,12 @@ export default function Navbar() {
     { name: "Education", path: "/education" },
     { name: "Resources", path: "/resources" },
   ];
+
   return (
     <nav
-      className={`px-8 py-4 flex items-center fixed top-0 left-0 w-full z-30 justify-between`}
+      className={`bg_cont px-8 py-4 flex transition-all items-center fixed top-0 left-0 w-full z-30 justify-between ${
+        scrolled ? "bg-[#0D1117] border-b border-b-white/5" : "" // Change background color when scrolled
+      }`}
     >
       <div className={`logoname font-bold text-white`}>Investment site</div>
       <div className={`menus hidden lg:flex md:gap-x-3 text-sm`}>

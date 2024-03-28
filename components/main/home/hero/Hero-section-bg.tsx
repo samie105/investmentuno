@@ -22,6 +22,7 @@ import {
   IconBrandFacebook,
   IconBrandFacebookFilled,
 } from "@tabler/icons-react";
+import { Meteors } from "@/components/ui/meteor";
 const World = dynamic(
   () => import("@/components/ui/globe").then((m) => m.World),
   {
@@ -63,7 +64,8 @@ export default function HeroSectionBg() {
   return (
     <div className="h-screen w-full bg-[#0D1117] overflow-hidden relative">
       {" "}
-      <BackgroundBeams className="" />{" "}
+      <BackgroundBeams className="hidden md:block" />{" "}
+      <Meteors number={30} className="md:hidden" />
       <div className="h-full relative">
         <div className="flex items-center justify-center h-full ">
           <div className="hero-texts w-full grid-cols-1 md:px-16 lg:grid-cols-2 h-full grid">
