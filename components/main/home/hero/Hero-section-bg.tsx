@@ -77,12 +77,12 @@ export default function HeroSectionBg() {
                     className="lg:text-5xl md:text-4xl px-3 md:px-0 text-3xl lg:text-left text-center tracking-tighter text-balance"
                   />
                   <TextGenerateEffect
-                    words="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique iure, blanditiis minima excepturi asperiores expedita."
+                    words="Jump on our automated trading platform giving you the potential to generate financial returns on the rise and fall of prices across all financial markets globally."
                     className="md:text-base text-sm text-center lg:text-left text-gray-300 font-medium /lg:w-5/6 mt-2 px-2 md:px-0 text-balance"
                   />
                 </div>
 
-                <div className="cta relative flex gap-x-4 items-center justify-center lg:justify-start mt-8 z-20">
+                <div className="cta relative to-transparent from-[#0D1117] bg-gradient-to-b flex gap-x-4 items-center justify-center lg:justify-start pt-8 z-20">
                   <div className="btnone signup ">
                     <Button className="/h-12 rounded-full cursor-pointer flex font-bold items-center gap-x-2 text-white bg-[#15833e]">
                       <p>Get Started</p>{" "}

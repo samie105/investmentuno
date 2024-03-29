@@ -50,8 +50,8 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg p-8">
-            <div className="font-bold flex items-center justify-between text-lg text-white/90 /text-green-600 ">
+          <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg p-4 md:px-8">
+            <div className="font-bold flex items-center justify-between text-lg text-[#15833e/] text-green-600 ">
               <p>{item.stepname}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export const HoverEffect = ({
                 />
               </svg>
             </div>
-            <div className=" flex items-center  mt-5">
+            <div className=" flex items-center text-sm  mt-5">
               <div className="textcont w-4/5 text-gray-400">
                 {item.stepDetails}
               </div>

@@ -81,7 +81,7 @@ export default function GettingStarted() {
     {
       stepname: "Earn with time",
       stepDetails:
-        "Watch how your asset generate revenue per time with zero to no risk in return",
+        "Watch how your asset generate revenue per time with zero to no risk in return. This solely depends on the duration",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ export default function GettingStarted() {
     },
   ];
   return (
-    <div className="text-white/90 px-3 md:px-5 py-3 mt-8 w-full overflow-hidden relative">
+    <div className="text-white/90 px-3 md:px-5 py-3 mt-16 w-full overflow-hidden relative">
       {" "}
       <div className="absolute top-0 left-0">
         <Image
@@ -149,8 +149,8 @@ export default function GettingStarted() {
             </div>
             <span className="">Kickstart your crypto earning journey.</span>{" "}
             <br className="/hidden lg:block" />
-            Get started with these few steps, it would not{" "}
-            <br className="hidden" /> take long
+            Get started with these few steps, it would not <br className="" />{" "}
+            take long
           </div>
         </div>
         <div className="btn hidden md:flex font-bold text-sm hover:bg-white/5 items-center mr-4 transition-all duration-500 cursor-pointer text-green-500 px-4 py-3 rounded-lg gap-x-3">
