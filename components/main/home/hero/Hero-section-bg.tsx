@@ -65,7 +65,7 @@ export default function HeroSectionBg() {
     <div className="h-screen w-full bg-[#0D1117] overflow-hidden relative">
       {" "}
       <BackgroundBeams className="hidden md:block" />{" "}
-      <Meteors number={10} className="md:hidden" />
+      <Meteors number={30} className="md:hidden" />
       <div className="h-full relative">
         <div className="flex items-center justify-center h-full ">
           <div className="hero-texts w-full grid-cols-1 md:px-16 lg:grid-cols-2 h-full grid">

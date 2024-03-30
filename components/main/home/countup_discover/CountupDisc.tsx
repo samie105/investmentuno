@@ -32,7 +32,7 @@ export default function CountupDisc() {
     <div className="pt-20">
       <div className="gridcont grid grid-cols-1 gap-x-3 md:grid-cols-2 pb-5">
         <div className=" mx-8">
-          <div className="lg:text-6xl md:text-5xl text-2xl font-bold text-white/90">
+          <div className="lg:text-6xl md:text-5xl text-3xl font-bold text-white/90">
             Discover a World of{" "}
             <div className="text-green-600">Opportunities.</div>
           </div>
@@ -63,7 +63,7 @@ export default function CountupDisc() {
             </div>
           </div>
         </div>
-        <div className="slides px-16">
+        <div className="slides px-5 md:px-16">
           {" "}
           <div className="h-1/2">
             {" "}
