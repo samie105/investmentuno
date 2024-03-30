@@ -70,7 +70,7 @@ export default function CountupDisc() {
             <InfiniteMovingCards
               items={imagePaths}
               direction="right"
-              speed="slow"
+              speed="normal"
             />
           </div>
           <div className="h-1/2">
@@ -78,7 +78,7 @@ export default function CountupDisc() {
             <InfiniteMovingCards
               items={imagePathstwo}
               direction="left"
-              speed="slow"
+              speed="normal"
             />
           </div>
         </div>

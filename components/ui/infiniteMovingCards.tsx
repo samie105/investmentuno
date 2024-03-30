@@ -97,7 +97,7 @@ export const InfiniteMovingCards = ({
               alt=""
               width={1000}
               height={1000}
-              className="md:w-24 md:h-24 w-16 p-16"
+              className="md:w-24 md:h-24 w-16 h-16"
               src={item.path}
             />
           </li>
