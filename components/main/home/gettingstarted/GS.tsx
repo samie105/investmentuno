@@ -144,7 +144,7 @@ export default function GettingStarted() {
                 src={"/assets/main/sssvgs/pppointed.svg"}
                 width={150}
                 height={150}
-                className="absolute animate-pulse -right-3 md:left-[50%] lg:left-1/3 top-0 opacity-40"
+                className="absolute animate-pulse -right-4 md:left-[50%] lg:left-1/3 top-0 opacity-40"
               />
             </div>
             <span className="">Kickstart your crypto earning journey.</span>{" "}
