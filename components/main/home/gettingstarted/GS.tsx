@@ -127,7 +127,7 @@ export default function GettingStarted() {
           src={"/assets/main/sssvgs/ooorganize.svg"}
           width={300}
           height={300}
-          className="opacity-20 md:hidden"
+          className="opacity-20 lg:hidden"
         />
       </div>
       <div className="textcont flex justify-between items-center relative">

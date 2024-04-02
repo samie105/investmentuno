@@ -53,8 +53,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg_cont px-8 py-4 flex transition-all items-center fixed top-0 left-0 w-full z-30 justify-between ${
-        scrolled ? "bg-[#0D1117] border-b border-b-white/5" : "" // Change background color when scrolled
+      className={`bg_cont px-8 py-4 flex ;-all items-center fixed top-0 left-0 w-full z-30 justify-between ${
+        scrolled
+          ? "bg-[#0d1117b8] opacity-100 bg-clip-padding backdrop-filter backdrop-blur-md border-b border-b-white/5"
+          : "" // Change background color when scrolled
       }`}
     >
       <div className={`logoname font-bold text-white`}>Investment site</div>
@@ -64,10 +66,10 @@ export default function Navbar() {
             <motion.div key={items.path}>
               <MotionLink
                 href={items.path}
-                className={`cursor-pointer transition-all hover:text-green-500 duration-500 ease-out relative ${
+                className={`cursor-pointer transition-all hover:text-white duration-500 ease-out relative ${
                   items.path === pathname
                     ? "font-bold text-green-500"
-                    : "text-gray-300"
+                    : "text-gray-400"
                 }`}
               >
                 {" "}
@@ -130,7 +132,7 @@ export default function Navbar() {
                       className={`relative px-3 ${
                         item.path === pathname
                           ? "font-bold  text-green-500  "
-                          : "text-gray-300"
+                          : "text-gray-400"
                       }`}
                     >
                       <motion.span>{item.name}</motion.span>

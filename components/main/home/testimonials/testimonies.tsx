@@ -2,17 +2,13 @@ import { CardStack } from "@/components/ui/cardStack";
 import React from "react";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
+import Line from "../Line";
 
 export default function Testimonies() {
   return (
     <div className="relative w-full">
       {" "}
-      <div className="cont flex justify-center absolute -top-14 w-full">
-        {" "}
-        <div className=" h-1 w-11 bg-green-600 rounded-full"></div>
-        <div className=" h-1 w-5 bg-green-600 rounded-full mx-0.5"></div>
-        <div className=" h-1 w-1 bg-green-600 rounded-full"></div>
-      </div>
+      <Line className="cont flex justify-center absolute -top-14 w-full" />
       <div className="osciliate_holder md:-top-80 left-0 absolute w-full opacity-10 /animate-pulse">
         <Image
           alt=""
@@ -28,10 +24,10 @@ export default function Testimonies() {
             Simply the <span className="text-green-600">Best.</span>
           </div>
           <div className="subtext text-gray-400 font-semibold mt-4 /text-sm w-5/6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-            voluptatem sapiente atque corporis debitis, reiciendis fuga a
-            cupiditate reprehenderit rem! Deleniti, ut magni inventore hic
-            suscipit dignissimos doloremque iste optio?
+            With millions of crypto investors all over the world, we have
+            satified each and every one of our users in more ways than one. We
+            have been persistent over the years in making [site name] home for
+            crypto investors and all.
           </div>
           <div className="sponsors grid grid-cols-3 items-center mt-8">
             <div>
