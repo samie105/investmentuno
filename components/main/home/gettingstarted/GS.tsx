@@ -127,7 +127,7 @@ export default function GettingStarted() {
           src={"/assets/main/sssvgs/ooorganize.svg"}
           width={300}
           height={300}
-          className="opacity-20"
+          className="opacity-20 md:hidden"
         />
       </div>
       <div className="textcont flex justify-between items-center relative">
@@ -135,9 +135,11 @@ export default function GettingStarted() {
           <div className="gsText pl-3">
             {" "}
             <div className=" relative flex items-center justify-center"></div>
-            <p className="font-bold text-lg ">Getting Started</p>
+            <p className="font-bold md:text-4xl text-3xl">
+              Getting <span className="text-green-600">Started.</span>
+            </p>
           </div>{" "}
-          <div className="headingcontinua text-sm md:text-base text-gray-300 mt-3 pl-3 font-medium ">
+          <div className="headingcontinua text-sm md:text-base text-gray-400 mt-3 pl-3 font-medium ">
             <div className="arrow">
               <Image
                 alt=""
