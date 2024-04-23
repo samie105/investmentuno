@@ -9,7 +9,7 @@ export default function Testimonies() {
     <div className="relative w-full">
       {" "}
       <Line className="cont flex justify-center absolute -top-14 w-full" />
-      <div className="osciliate_holder md:-top-80 left-0 absolute w-full opacity-10 /animate-pulse">
+      {/* <div className="osciliate_holder md:-top-80 left-0 absolute w-full opacity-10 /animate-pulse">
         <Image
           alt=""
           src={"/assets/main/sssvgs/oooscillate.svg"}
@@ -17,7 +17,7 @@ export default function Testimonies() {
           height={1000}
           className="w-full h-full "
         />{" "}
-      </div>
+      </div> */}
       <div className="grid gridco1 md:grid-cols-2 my-14">
         <div className="text pl-8">
           <div className="header text-3xl font-bold">

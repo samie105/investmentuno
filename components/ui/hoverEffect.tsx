@@ -50,7 +50,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg p-4 md:px-8">
+          <div className="/border-green-900 /border rounded-lg relative bg-[#0D1117] backdrop-filter backdrop-blur-lg h-full p-4 md:px-8">
             <div className="font-bold flex items-center justify-between text-lg text-[#15833e/] text-green-600 ">
               <p>{item.stepname}</p>
               <svg
