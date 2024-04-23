@@ -51,7 +51,7 @@ export default function Wcuuno() {
 
       name: "Trading Instrument",
       info: "150+",
-      imagePath: "/assets/main/hours.png",
+      imagePath: "/assets/main/chart.png",
       classname: "top-2 left-2",
       classnamedues: "bottom-3 right-1",
     },
@@ -75,22 +75,29 @@ export default function Wcuuno() {
         <div className="w-full z-20 relative">
           <div className="absolute top-7 left-0">
             <Button className="cont-green relative text-/sm w-full rounded-md bg-[#ffffff17] border border-white/10 bg-clip-padding backdrop-filter backdrop-blur-xl /bg-[#349C5B] px-4 py-3 overflow-hidden flex items-center /animate-bounce">
-              <div className="inner-circle rounded-full text-xl h-9 w-8 font-bold /bg-[#349C5B] text-[#42FA85] flex items-center justify-center p-3 ">
+              <div className="inner-circle rounded-full text-xl h-9 w-9 font-bold /bg-[#349C5B] text-[#42FA85] flex items-center justify-center p-3 ">
                 <p>
                   {" "}
-                  <CountUp
-                    end={97}
-                    duration={5}
-                    start={0}
-                    decimal=","
-                    enableScrollSpy
-                  />
+                  <CountUp end={99} duration={5} start={0} decimal="," />
                 </p>
               </div>
               <div className="inner-text text-white/60 pl-2 w-full f/ont-semibold text-base /text-sm /w-full z-20">
                 Trading Accuracy
               </div>
             </Button>
+          </div>
+          <div className="absolute bottom-3 md:bottom-16 right-5">
+            <code className="bignumber font-black text-[7rem] text-green-600 opacity-30">
+              {" "}
+              <CountUp
+                end={99}
+                duration={5}
+                start={0}
+                decimal=","
+                enableScrollSpy
+              />
+              <sup className="text-lg">%</sup>
+            </code>
           </div>
           <div className=" flex items-center justify-center w-full h-full">
             {" "}
@@ -101,29 +108,30 @@ export default function Wcuuno() {
           </div>
         </div>
 
-        <div className="textbracket h-[50vh] z-20 grid grid-cols-2 gap-2">
+        <div className="textbracket md:h-[50vh] z-20 grid grid-cols-2 gap-2">
           {grid.map((g) => (
-            <div key={g.info}>
-              <div className="bg-[#ffffff0d] overflow-hidden border z-20 border-white/10 bg-clip-padding backdrop-filter backdrop-blur-xl rounded-lg py-4 relative">
-                {/* <div
-                  className={`${
-                    `bg-[#349C5B] absolute w-7 h-7 blur-xl rounded-full opacity-60 ` +
-                    g.classname
-                  }`}
-                />{" "} */}
-                <div
-                  className={`${
-                    `bg-[#349C5B] absolute w-14 h-8 blur-3xl z-10 rounded-full /opacity-60 ` +
-                    g.classnamedues
-                  }`}
-                />{" "}
+            <div key={g.info} className="overflow-hidden relative /py-4">
+              {" "}
+              <div
+                className={`${
+                  `bg-[#349C5B] absolute w-8 h-8  rounded-full /opacity-60 ` +
+                  g.classnamedues
+                }`}
+              />{" "}
+              <div
+                className={`${
+                  `bg-[#349C5B] absolute w-7 h-7 blur-xl rounded-full opacity-60 ` +
+                  g.classname
+                }`}
+              />{" "}
+              <div className="bg-[#ffffff0d] z-20 border w-full h-full  border-white/10 bg-clip-padding backdrop-filter backdrop-blur-2xl rounded-md  py-4">
                 <div className="flex justify-center">
                   <Image
                     height={1000}
                     width={1000}
                     alt=""
                     src={g.imagePath}
-                    className="opacity-80 w-16 h-"
+                    className="opacity-50 w-16 h-"
                   />
                 </div>
                 <div className="font-medium text-xl mt-2 text-center /text-green-600">
@@ -135,7 +143,6 @@ export default function Wcuuno() {
                       decimal="."
                       decimalPlaces={2}
                       decimals={1}
-                      enableScrollSpy
                     />
                   ) : (
                     <>{g.info}</>
