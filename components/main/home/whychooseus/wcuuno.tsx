@@ -48,7 +48,6 @@ export default function Wcuuno() {
     },
     {
       id: 4,
-
       name: "Trading Instrument",
       info: "150+",
       imagePath: "/assets/main/chart.png",
@@ -134,7 +133,7 @@ export default function Wcuuno() {
                     className="opacity-50 w-16 h-"
                   />
                 </div>
-                <div className="font-medium text-xl mt-2 text-center /text-green-600">
+                <div className="font-medium md:text-xl text-base mt-2 text-center /text-green-600">
                   {g.id === 3 ? (
                     <CountUp
                       end={Number(g.info)}
@@ -148,7 +147,9 @@ export default function Wcuuno() {
                     <>{g.info}</>
                   )}
                 </div>
-                <div className="text-white/60 text-center">{g.name}</div>
+                <div className="text-white/60 text-center md:text-base text-sm">
+                  {g.name}
+                </div>
               </div>
             </div>
           ))}
